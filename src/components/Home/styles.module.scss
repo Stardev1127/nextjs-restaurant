@@ -1,0 +1,56 @@
+@import 'styles/variables';
+
+.header {
+  background-color: $color-black;
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  .header_h1 {
+    font-family: $font-base;
+    color: $color-golden;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 58px;
+    font-size: 48px;
+  }
+
+  .header_p {
+    margin: 2rem 0;
+  }
+
+  .header_img img {
+    width: 80%;
+  }
+
+  .wrapper_info {
+    flex: 1;
+  }
+
+  .wrapper_img {
+    position: relative;
+    z-index: 99;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 2000px) {
+  .header_h1 {
+    line-height: 62px;
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header_h1 {
+    line-height: 46px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header_h1 {
+    line-height: 38px;
+    font-size: 28px;
+  }
+}
